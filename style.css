@@ -36,3 +36,10 @@ p{
     font-family: Mono;
     
 }
+
+#start-btn{
+    background-color: #ad3a74;
+    color:#f1e1aa;
+    border:none;
+    width:50%;
+}
