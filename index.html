@@ -55,6 +55,14 @@
           $("#birthday-site").removeClass("d-none");
         });
       });
+
+      document.getElementById("start-btn").addEventListener("click", function() {
+    document.getElementById("start-btn").style.display = "none";
+    document.getElementById("birthday-site").style.display = "block";
+    document.getElementById("birthday-song").style.display = "block";
+    document.getElementById("birthday-song").play();
+  });
+
     </script>
     <div id="confetti-holder"></div>
 </body>
