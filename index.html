@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="confetti.css" rel="stylesheet">
+<script src="confetti.js"></script>
+<script>
+  function startConfetti() {
+    var confettiSettings = { target: 'confetti-holder' };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+  }
+</script>
+
+</head>
+
+  <body>
+    <div class="container mt-5 text-center">
+      <button id="start-btn" class="btn btn-primary mt-5">Click to Start</button>
+    </div>
+
+    <div id="birthday-site" class="d-none">
+      <div class="jumbotron text-center">
+        <h1>Happy Birthday My Love</h1>
+        <p class="lead">Happy 17!</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="e861c057e3225b5aa99efa306ef220be.gif" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2>HAPPY BIRTHDAY KITTY</h2>
+            <p>Happy birthday my love! You mean everything to me, and I'm grateful for all the joy you bring into my life. I hope your birthday is as special as you are, and may all your wishes come true!</p>
+          </div>
+        </div>
+      </div>
+
+      <audio id="birthday-song" src="onlymp3.to - Taylor Swift - Lavender Haze (Official Music Video)-h8DLofLM7No-256k-1654359026543.mp3" autoplay loop></audio>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#start-btn").click(function() {
+          $("#start-btn").hide();
+          $("#birthday-site").removeClass("d-none");
+        });
+      });
+    </script>
+    <div id="confetti-holder"></div>
+</body>
+</html>

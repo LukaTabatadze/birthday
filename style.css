@@ -1,0 +1,38 @@
+body {
+    background-color: #ffcba1;
+  }
+  
+  .jumbotron {
+    background-color: #ad3a74;
+    color: #f1e1aa;
+  }
+  
+  #birthday-site {
+    text-align: center;
+  }
+  
+  #birthday-song {
+    display: none;
+  }
+
+  @font-face {
+    font-family: Mono;
+    src: url(fonts/SpaceMono-Regular.ttf);
+  }
+
+  h1{
+    font-family: Mono;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+  }
+
+h2{
+    color: #ff9ece;
+}
+
+p{
+    color:darksalmon;
+    font-size: large;
+    font-family: Mono;
+    
+}
